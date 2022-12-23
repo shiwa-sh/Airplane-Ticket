@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\style\changePass.css">
+    <link rel="stylesheet" href="..\style\sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+    <script src="..\script\panel.js"></script>
+    <title>Change Password</title>
+</head>
+<body>
+   
+    <!-- main panel -->
+    <div class="panel">
+        <header class="form-header-container">
+            <div class="panel-header">
+                <h2 class="panel-haeader-title">تغییر رمز عبور  </h2>
+            </div>
+        </header>
+        
+       
+        <div class="panel-body">
+            <form action="" name="password" method="get" class="panel-body" onsubmit="return checkpassword()">
+                <section style="background-color: white">
+
+                    <div class="wrap">
+
+         
+                    <div class="password">
+                        <div class="password-title input-title">رمز عبور قبلی</div>
+                        <div class="password-input input-container">
+                            <input type="password" id="password" name="password" class="pass-input" required>
+                        </div>
+                    </div>
+
+                    <div class="password">
+                        <div class="password-title input-title">رمز عبور جدید</div>
+                        <div class="password-input input-container">
+                            <input type="password" id="new-password" name="new-password" class="pass-input">
+                        </div>
+                    </div>
+
+                    <div class="password">
+                        <div class="password-title input-title">تکرار رمز عبور جدید</div>
+                        <div class="password-input input-container">
+                            <input type="password" id="repassword" name="repassword" class="pass-input">
+                        </div>
+                    </div>
+
+                   
+                    </div>
+                    <div class="submit-button" style="background-color: white">
+                        <button type="submit" class="submit-btn">ثبت تغییرات</button>
+                    </div>
+                </section>
+            </form>
+
+        </div>
+    </div>
+    <!-- sidebar  -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            پنل کاربری
+        </div>
+        <ul class="parent-menu">
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-user-o" ></i>
+                    </span>
+                    <span class="items item-title">پروفایل کاربری</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible dropdown-btn"  onclick="dropDown()">
+                            <i class="fa fa-caret-down" ></i>
+                    </button>
+
+                </span>
+                <!-- sub menu -->
+                <ul class="sub-item-wraper">
+                    <li class="sub-item">
+                        <a href="" >
+                            <span style="background-color: white;" >
+                                <i class="fa fa-id-card" aria-hidden="true"></i>
+                            </span>
+                            <span class="sub-item-title">مشخصات</span>
+                        </a>
+                    </li>
+                    <li class="sub-item">
+                        <a href="" >
+                            <span style="background-color: white;">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                            <span class="sub-item-title">
+                                <button onclick="redirect_to_cp()"  class="cp-btn" style="background-color: white;"> تغییر رمز عبور </button>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+
+                    </span>
+                    <span class="items item-title">بلیط ها</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+                </span>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">خدمات سفر</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+                </span>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">پشتیبانی</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button  type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+                </span>
+
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">خروج</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+
+                </span>
+            </li>
+            <!--  -->
+
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>

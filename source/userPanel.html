@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\style\userPanel.css">
+    <link rel="stylesheet" href="..\style\sidebar.css">
+    <link rel="import" href="sidebar.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+    <script src="..\script\panel.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+   
+    <!-- main panel -->
+    <div class="panel">
+        <header class="form-header-container">
+            <div class="panel-header">
+                <h2 class="panel-header-title">اطلاعات کاربری</h2>
+            </div> <!-- closed of panel-header   -->
+        </header>
+        
+
+        <div class="panel-body">
+            <form action="" name="register" method="get" class="panel-body-form" style="background-color: white">
+                <section>
+
+                    <div class="wrap">
+
+                        <div class="first-name wrap-input" >
+                            <div class="firs-name-title input-title">نام</div>
+                            <div class="first-name-input input-container">
+                                <input type="text" id="name" name="name" class="input" required>
+                            </div>
+                        </div>
+    
+                        <div class="last-name wrap-input">
+                            <div class="last-name-title input-title"> نام خانوادگی</div>
+                            <div class="last-name-input input-container">
+                                <input type="text" id="last-name" name="last-name" class="input" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="wrap">
+                        <div class="en-name wrap-input">
+                            <div class="en-name-title input-title">نام به انگلیسی</div>
+                            <div class="en-name-input input-container">
+                                <input type="text" id="en-name" name="en-name" class="input" required>
+                            </div>
+                        </div>
+    
+                        <div class="en-last-name wrap-input">
+                            <div class="en-last-name-title input-title">نام خانوادگی به انگلیسی</div>
+                            <div class="en-last-name-input input-container">
+                                <input type="text" id="en-last-name" name="en-last-name" class="input" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="national-code wrap-input">
+                            <div class="national-code-title input-title">شماره ملی</div>
+                            <div class="national-code-input input-container">
+                                <input type="text" id="national-code" name="national-code" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="passport-code wrap-input">
+                            <div class="passport-code-title input-title">شماره گذرنامه</div>
+                            <div class="passport-code-input input-container">
+                                <input type="text" id="passport-code" name="passport-code" placeholder="شماره گذرنامه (اختیاری)" class="input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="email wrap-input">
+                            <div class="email-title input-title">ایمیل</div>
+                            <div class="email-input input-container">
+                                <input type="email" id="email" name="email" class="input">
+                            </div>
+                        </div>
+
+                        <div class="phone wrap-input">
+                            <div class="phone-title input-title">تلفن همراه</div>
+                            <div class="phone-input input-container">
+                                <input type="text" id="phone" name="phone" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                    <div style="background-color: white">
+                    <div class="birthday wrap-input">
+                        <div class="birthday-title input-title">تاریخ تولد</div>
+                        <div class="birthday-input input-container">
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                    </div>
+
+                    <div class="password wrap-input">
+                        <div class="password-title input-title">رمز عبور</div>
+                        <div class="password-input input-container">
+                            <input type="password" id="password" name="password" style="border-radius: 5px" class="input">
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+
+                        <input type="radio" name="male" id="male">
+                        <label for="male" style="background-color: white">مرد</label>
+                        <input type="radio" name="female" id="female">
+                        <label for="female" style="background-color: white">زن</label><br>
+                    </div>
+                    </div>
+
+                    <div class="submit-button" style="background-color: white">
+                        <button type="submit" class="submit-btn">ثبت تغییرات</button>
+                    </div>
+                </section>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- end of main panel -->
+    <!-- sidebar  -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            پنل کاربری
+        </div>
+        <ul class="parent-menu">
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-user-o" ></i>
+                    </span>
+                    <span class="items item-title">پروفایل کاربری</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible dropdown-btn"  onclick="dropDown()">
+                            <i class="fa fa-caret-down" ></i>
+                    </button>
+                  
+                </span>
+                <!-- sub menu -->
+                <ul class="sub-item-wraper">
+                    <li class="sub-item">
+                        <a href="" >
+                            <span style="background-color: white;" >
+                                <i class="fa fa-id-card" aria-hidden="true"></i>
+                            </span>
+                            <span class="sub-item-title">مشخصات</span>
+                        </a>
+                    </li>
+                    <li class="sub-item">
+                        <a href="" >
+                            <span style="background-color: white;">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                            <span class="sub-item-title"> 
+                                <button onclick="redirect_to_cp()"  class="cp-btn" style="background-color: white;" type="button"> تغییر رمز عبور </button>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+
+                    </span>
+                    <span class="items item-title">بلیط ها</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+                   
+                </span>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">خدمات سفر</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+                    
+                </span>
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">پشتیبانی</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button  type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>    
+                </span>
+                
+            </li>
+            <!--  -->
+            <li class="menu-item">
+                <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </span>
+                    <span class="items item-title">خروج</span>
+                </a>
+                <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+                  
+                    
+                </span>
+            </li>
+            <!--  -->
+            
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>
