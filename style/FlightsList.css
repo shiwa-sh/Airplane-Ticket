@@ -1,0 +1,139 @@
+*{
+    direction: rtl;
+}
+@font-face {
+    font-family: mikhak;
+    src: url(../style/font/font2.woff2) format("woff2");
+}
+
+body{
+    font-family: mikhak;
+    background-image: url(/style/img/picture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.summery-des{
+    width: 100%;
+    margin-top: 4.5%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    backdrop-filter: bulr(80%);
+}
+.availabe-flights-ticket{
+    width: 750px;
+    height: 220px;
+    margin: 20px auto;
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+    background-image: 
+       url("../style/img/tst.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.x3{
+    position: fixed;
+    text-align: right;
+    width: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: bulr(70%);
+}
+
+
+#srcOfFly{
+    display: inline-block;
+    padding: 10px;
+}
+#destOfFly{
+    display: inline-block;
+    padding: 10px;
+}
+.flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    
+}
+.w1{
+    width:30%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w2{
+    width:65%;
+    flex: 0 0 auto;
+    margin: 13px;
+    box-shadow: 0 2px 3px rgb(158, 53, 190);
+}
+.summery{
+    margin: 100px;
+}
+
+.w-right{
+    height: 155px;
+    width:47%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w-middle{
+    height: 155px;
+    width:15%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w-left{
+    height: 155px;
+    width:22%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w3-right{
+    width:20%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w3-middle{
+    width:25%;
+    flex: 0 0 auto;
+    margin: 13px;
+}
+.w3-left{
+    width: auto;
+    flex: 0 0 auto;
+}
+.flex_wrap2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.w4-top{
+    height: 65px;
+    flex: 0 0 auto;
+}
+.w4-bottom{
+    height: 65px;
+    flex: 0 0 auto;
+}
+.center {
+    text-align: center;
+    margin:auto ;
+}
+#buy-btn{
+    background: rgba(254, 135, 57);
+    border-radius: 10px;
+    color: #ffff;
+    font-size: medium;
+    font-family: mikhak;
+    width: 100px;
+}
