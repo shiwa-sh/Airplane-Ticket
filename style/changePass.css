@@ -1,0 +1,133 @@
+@font-face {
+    font-family: mikhak;
+    src: url("font/font3.woff2") format("woff2");
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f0f3f7;
+    direction: rtl;
+    font-family: mikhak;
+    
+
+}
+
+
+
+/* panel sidebar style */
+
+/* main panel style */
+
+.panel{
+    width: 60%;
+    /* height: 50vh; */
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: 0 1px 5px 0 rgba(0,0,0,.14901960784313725); */
+    padding: 20px;
+}
+.panel-header{
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.form-header-container
+{
+    padding-bottom: 10px;
+    background-color: white;
+
+    padding: 5px;
+}
+.panel-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    column-gap: 20px;
+    justify-content:space-between;
+}
+
+h2.panel-haeader-title{
+    background-color:deepskyblue ;
+    border-radius: 5px;
+    padding: 5px;
+}
+.show{
+    display: block;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #ffffff;
+    right: 5%;
+    
+}
+.wrap1{
+    flex : 0 0 auto;
+    
+}
+
+.input{
+    
+    
+    border: none;
+    height: 100%;
+
+}
+
+.input-container {
+    padding: 2px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.input-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    background-color: #ffffff;
+    
+}
+
+.input:focus{
+    border: none;
+}
+
+.fa{
+    background-color: #ffffff;
+}
+.pass-input{
+    border-radius: 5px;
+    width: 300px;
+
+}
+
+.password{
+    background-color: white;
+    padding: 7px 15px;
+}
+.submit-btn{
+    background-color: deepskyblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
