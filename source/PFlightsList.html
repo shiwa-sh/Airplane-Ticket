@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Side</title>
+    <link rel="stylesheet" href="../style/Pstyle.css"> 
+</head>
+<body>
+    <div>
+        <h1>
+            پنل کارمندان
+            <div class="update_time" style="float: left;">
+              به روز رسانی در
+            <div id="now"></div>
+          </div>
+        </h1>
+        <p class="FlyList">
+          لیست پروازها
+        </p>
+    </div>
+    <div class="flex_wrap">
+        <div class="w1">
+          <div class="gapPPP">
+            <div >
+              <h4>
+                فیلتر بر اساسِ ...
+              </h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque quo enim alias numquam molestias qui magnam ex eligendi placeat! Harum impedit qui pariatur, nesciunt fugit et a ab facilis.
+            </div>
+            <div>
+              <p  class="deleteFilter">
+                حذف فیلتر ها 
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="w2">
+            <h4>
+                لیست پرواز ها
+            </h4>
+            <table>
+                <tr>
+                  <th class="Pair"> هواپیمایی </th>
+                  <th class="Pnum">شماره پرواز</th>
+                  <th class="Pdat">تاریخ</th>
+                  <th class="Phur">ساعت حرکت</th>
+                  <th class="Psrc">مبدا</th>
+                  <th class="Pdis">مقصد</th>
+                </tr>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+                
+              </table>
+        </div>
+    </div>
+</body>
+<script>
+  //set time
+  //hear because: it should not be in the HEAD element or placed before any of the elements you want to "get"
+  //https://stackoverflow.com/a/25088199
+  function checkTime(i) {
+  if (i < 10) {
+      i = "0" + i;
+  }
+  return i;
+  }
+  function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('now').innerHTML = h + ":" + m ;
+}
+startTime();
+</script>
+
+</html>
