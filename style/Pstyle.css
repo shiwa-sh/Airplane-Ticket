@@ -1,0 +1,82 @@
+#redirect-btn{
+    background: rgba(254, 135, 57);
+    border-radius: 10px;
+    color: #ffff;
+    text-align: center;
+    margin: auto;
+    
+}
+*{
+    direction: rtl;
+    font-family: mikhak;
+}
+@font-face {
+    font-family: mikhak;
+    src: url(../style/font/font2.woff2) format("woff2");
+}
+.flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.w1{
+    width: 25%;
+    flex: 0 0 auto;
+    border: 1px solid green;
+    padding-right: 10px;
+}
+.w2{
+    width: 65%;
+    flex: 0 0 auto;
+    border: 1px solid green;
+    padding-right: 10px;
+}
+th, td {
+    border:1px solid blue;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+table{
+    border:1px solid blue;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+#now{
+    display: inline-block;
+    text-align: center;
+}
+.update_time{
+    text-align: left; 
+    display: inline-block;
+    background: rgba(254, 135, 57);
+    border-radius: 10px;
+    color: #ffff;
+    font-size: medium;
+    font-family: mikhak;
+    width: auto;
+    padding: 5px;
+}
+.gapPPP{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 168px;
+}
+.deleteFilter{
+    text-align: center;
+    background: rgba(254, 135, 57);
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 12px;
+}
+.FlyList{
+    background-image: url(../style/img/Pheader.png);
+    background-size: cover;
+    padding: 150px;
+    font-size: large;
+    color: white;
+}
