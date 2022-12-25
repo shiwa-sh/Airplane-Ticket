@@ -38,8 +38,7 @@ th, td {
     padding: 10px;
     border-collapse: collapse;
 }
-table{
-    border:1px solid blue;
+table {
     text-align: center;
     padding: 10px;
     border-collapse: collapse;
@@ -64,14 +63,14 @@ table{
     padding: 10px;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 168px;
+    gap: 65px;
 }
 .deleteFilter{
     text-align: center;
     background: rgba(254, 135, 57);
     border-radius: 10px;
     color: #ffff;
-    font-size: 12px;
+    font-size: 15px;
 }
 .FlyList{
     background-image: url(../style/img/Pheader.png);
@@ -79,4 +78,10 @@ table{
     padding: 150px;
     font-size: large;
     color: white;
+}
+.filterO{
+    border:1px solid blue;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
 }
