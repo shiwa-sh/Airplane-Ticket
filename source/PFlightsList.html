@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Side</title>
+    <link rel="stylesheet" href="../style/Pstyle.css"> 
+    <script src="../script/Personnel.js"></script>
+  </head>
+<body>
+    <div>
+        <h1>
+            پنل کارمندان
+            <div class="update_time" style="float: left;">
+              به روز رسانی در
+            <div id="now"></div>
+          </div>
+        </h1>
+        <p class="FlyList">
+          لیست پروازها
+        </p>
+    </div>
+    <div class="flex_wrap">
+        <div class="w1">
+          <div class="gapPPP">
+            <div >
+              <h4>
+                فیلتر بر اساسِ هواپیمایی...
+              </h4>
+              <div class="filteringContainer">
+                <form>
+                  <input type="radio" id="FlyPersia" name="airline" value="FlyPersia" onclick="filterSelection('fp')">
+                  <label for="airline"> فلای پرشیا</label><br>
+                  <input type="radio" id="FlyIran" name="airline" value="FlyIran" onclick="filterSelection('fi')">
+                  <label for="airline"> فلای ایران</label><br>
+                  <input type="radio" id="FlyQeshm" name="airline" value="FlyQeshm" onclick="filterSelection('fq')">
+                  <label for="airline"> فلای قشم</label><br>
+                  <input type="radio" id="FlyMahan" name="airline" value="FlyMahan" onclick="filterSelection('fm')">
+                  <label for="airline"> فلای ماهان</label><br>
+                </form>
+                
+                <br>
+                <h4>جستجو بر اساس شماره پرواز ...</h4>
+                <div>
+                  <input type="text" id="flightNumber" name="flightNumber" placeholder="شماره پرواز">
+                  <button onclick="search"><img src ="../style/img/blue.png" alt="search" width="14px"></button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="deleteFilter" onclick="delFilters()">
+                حذف فیلتر ها 
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <div class="w2">
+            <h4>
+                لیست پرواز ها
+            </h4>
+            <table>
+                <tr class="HeaderTabel">
+                  <th class="Pair"> هواپیمایی </th>
+                  <th class="Pnum">شماره پرواز</th>
+                  <th class="Pdat">تاریخ</th>
+                  <th class="Phur">ساعت حرکت</th>
+                  <th class="Psrc">مبدا</th>
+                  <th class="Pdis">مقصد</th>
+                </tr>
+
+                <tr class="fp filterO">
+                  <td>فلای پرشیا</td>
+                  <td>1</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fi filterO">
+                  <td>فلای ایران</td>
+                  <td>12</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fq filterO">
+                  <td>فلای قشم</td>
+                  <td>123</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fm filterO">
+                  <td>فلای ماهان</td>
+                  <td>1234</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fp filterO">
+                  <td>فلای پرشیا</td>
+                  <td>1</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fi filterO">
+                  <td>فلای ایران</td>
+                  <td>12</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fq filterO">
+                  <td>فلای قشم</td>
+                  <td>123</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fm filterO">
+                  <td>فلای ماهان</td>
+                  <td>1234</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fp filterO">
+                  <td>فلای پرشیا</td>
+                  <td>1</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fi filterO">
+                  <td>فلای ایران</td>
+                  <td>12</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fq filterO">
+                  <td>فلای قشم</td>
+                  <td>123</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                <tr class="fm filterO">
+                  <td>فلای ماهان</td>
+                  <td>1234</td>
+                  <td>1401/10/12</td>
+                  <td>10:00</td>
+                  <td>مشهد</td>
+                  <td>تهران</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+  //set time
+  //hear because: it should not be in the HEAD element or placed before any of the elements you want to "get"
+  //https://stackoverflow.com/a/25088199
+  function checkTime(i) {
+  if (i < 10) {
+      i = "0" + i;
+  }
+  return i;
+  }
+  function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('now').innerHTML = h + ":" + m ;
+}
+startTime();
+</script>
+
+</html>
