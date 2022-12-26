@@ -1,0 +1,93 @@
+
+
+.form{
+    direction: rtl;
+    width:500px;
+    height:500px;
+    left: 100px;
+    top: 110px;
+    background: linear-gradient(to top , rgba(49, 39, 189, 0.548) , rgba(49, 39, 189, 0.288));
+    position: absolute;
+    border-radius: 20px;
+    backdrop-filter: bulr(80%);
+    box-shadow: 0 20px 30px rgba(137, 113, 221, 0.80);
+
+}
+.form h2{
+    width:330px;
+    font-family: mikhak;
+    text-align: center;
+    color: #ffff;
+    font-size: 30px;
+    margin-right: 85px;
+    padding-top: 25px;
+
+}
+
+.form input{
+    display: flex;
+    margin-right: 85px;
+    width: 330px;
+    height: 50px;
+    background: #ffff;
+    border-bottom:3px solid #32198f ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    color: #32198f;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-family: mikhak;
+}
+
+
+.form label{
+   
+    font-size: 20px;
+    padding-right: 85px;
+    color: #ffff;
+}
+
+#passengers{
+    display: flex;
+    margin-right: 85px;
+    width: 330px;
+    height: 50px;
+    background: #ffff;
+    border-bottom:3px solid #32198f ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    color: #32198f;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-family: mikhak;
+}
+
+#booking-search-btn{
+    margin-top: 25px; 
+    margin-right: 180px;
+    width: 140px;
+    height: 50px;
+    background:#f03737;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffff;
+    font-size: medium;
+    font-family: mikhak;
+
+}
+
+
+#booking-search-btn:hover
+{
+    transform: scale(1.1);
+
+}
+.form input:focus{
+    outline: none;
+}
