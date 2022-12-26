@@ -6,7 +6,7 @@
     box-sizing: border-box;
     background-color: #f0f3f7;
     direction: rtl;
-    font-family: Mikhak;
+    font-family: mikhak;
     
 
 }
@@ -22,7 +22,7 @@
     top: 15%;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
     /* box-shadow: 0 1px 5px 0 rgba(0,0,0,.14901960784313725); */
     padding: 20px;
     /*display: flex;*/
