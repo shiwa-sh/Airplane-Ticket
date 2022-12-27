@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+}
+*{
+    direction: rtl;
+    font-family: mikhak;
+}
+@font-face {
+    font-family: mikhak;
+    src: url(../style/font/font3.woff2) format("woff2");
+}
+
+td, th{
+    border: 2px solid rebeccapurple;
+    padding: 5px;
+    text-align: center;
+}
+
+.top{
+    background-image: url(../style/img/Pheader.png);
+    padding: 150px;
+    background-size: cover;
+}
