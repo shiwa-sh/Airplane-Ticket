@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aboutFlight</title>
     <link rel="stylesheet" href="../style/aboutFlight.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/aboutFlight.js"></script>
 </head>
 <body>
     <div class="airplaneCapacity top">
-        <p >
             <div>ظرفیت هواپیما</div>
             <div>تعداد صندلی های خالی: 9</div>
             <div>تعداد صندلی های رزرو شده: 3</div>
-        </p>
     </div>
-    <div>
+    <div class="aa">
         <table>
             <th>شماره صندلی</th>
             <th>وضعیت صندلی</th>
@@ -28,8 +28,8 @@
             <th>جنسیت</th>
 
             <tr>
-                <td>1</td>
-                <td>رزرو</td>
+                <td class="num">1</td>
+                <td id="res">رزرو</td>
                 <td>محمد</td>
                 <td>محمدی</td>
                 <td>123456789</td>
@@ -41,15 +41,35 @@
             <tr>
                 <td>2</td>
                 <td>خالی</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -65,18 +85,46 @@
             <tr>
                 <td>6</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>10</td>
@@ -92,14 +140,116 @@
             <tr>
                 <td>11</td>
                 <td>خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>12</td>
-                <td>خالی</td>
+                <td >خالی</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
 
         
         </table>
+
+    <section class="icon">
+		<div class="text-h">
+			<h2>خدمات سفر</h2>
+		</div>
+
+		<div class="row-items">
+			<div class="icon-box">
+				
+					<img src="../style/img/icon1.png" class="icon-img">
+				
+				<h4>رتبه یک سفر</h4>
+				<p>معتبرترین عرضه‌کننده <br> محصولات گردشگری در ایران</p>
+			</div>
+
+			<div class="icon-box">
+				
+					<img src="../style/img/icon2.png" class="icon-img">
+			
+				<h4>همسفر هر سفر</h4>
+				<p>ارائه تمامی خدمات سفر <br> (پرواز، قطار، اتوبوس، هتل و تور)</p>
+			</div>
+
+			<div class="icon-box">
+				
+					<img src="../style/img/icon3.png" class="icon-img">
+				
+				<h4>همسفر همه لحظات سفر</h4>
+				<p>پشتیبانی و همراهی ۲۴ ساعته <br> در تمامی مراحل سفر</p>
+			</div>
+		</div>
+	</section> 
     </div>
+	<!--footer--->
+	<section id="contact">
+		<div class="footer">
+			<div class="main">
+				<div class="list">
+					<a href="#">
+						<img src="../style/img/icon3.png" class="svg">
+					</a>
+				</div>
+
+				<div class="list">
+					<h4>air france</h4>
+					<ul>
+						<li><a href="#">درباره ما</a></li>
+						<li><a href="#">خرید بلیط</a></li>
+						<li><a href="#">پیگیری بلیط</a></li>
+						<li><a href="#">لیست پروازها</a></li>
+						<li><a href="#">حساب کاربری</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>هواپیمایی فرانسه</h4>
+					<ul>
+						<li><a href="#">درباره ما</a></li>
+						<li><a href="#">خرید بلیط</a></li>
+						<li><a href="#">پیگیری بلیط</a></li>
+						<li><a href="#">لیست پروازها</a></li>
+						<li><a href="#">حساب کاربری</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<a href="#">
+						<img src="../style/img/Air-France-Logo.png" class="logo">
+					</a>
+					<ul>
+						<li><p class="info">لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
+						<br>لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
+						</p>
+						<div class="social">
+							<a href="#"><i class='bx bxl-facebook' ></i></a>
+							<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+							<a href="#"><i class='bx bxl-twitter' ></i></a>
+							<a href="#"><i class='bx bxl-linkedin' ></i></a>
+						</div>
+					</li>
+						
+					</ul>
+				</div>
+
+				
+			</div>
+		</div>
+	</section>
+    <script type="text/javascript" src="../script/script.js"></script>
 </body>
 </html>

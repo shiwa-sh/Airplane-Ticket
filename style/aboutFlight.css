@@ -1,6 +1,3 @@
-table{
-    width: 100%;
-}
 *{
     direction: rtl;
     font-family: mikhak;
@@ -9,15 +6,32 @@ table{
     font-family: mikhak;
     src: url(../style/font/font3.woff2) format("woff2");
 }
-
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
 td, th{
     border: 2px solid rebeccapurple;
     padding: 5px;
     text-align: center;
 }
-
+.aa{
+    background-image: url(../style/img/picture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .top{
     background-image: url(../style/img/Pheader.png);
-    padding: 150px;
+    padding: 120px;
+    font-size: large;
     background-size: cover;
+    color: darkorange;
+}
+th{
+    background-color: aquamarine;
+    backdrop-filter: blur(70%);
+}
+#res{
+
 }
