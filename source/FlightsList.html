@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../style/FlightsList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--header by madi:-->
+    <div>
+
+    </div>
+    <!--a summery of selection in previous page position fix-->
+    <!--to be a header:
+         <div class="summery-des">
+        <div class="summery">
+            ۱۴۰۱/۱۲/۱۰
+            <img src="src/calendar.png">
+        </div>
+        <div class="summery">
+            ۱۳:۰۰
+            <img src="src/clock.png" width="20px">  
+        </div>    
+        <div class="summery">
+            تعداد مسافر: ۱
+            <img src="src/person.png" width="20px">
+        </div>
+        <div class="summery">
+            بلیط هواپیما مشهد به یزد
+            <img src="src/airplane.png" width="90px">
+        </div>
+    </div> -->
+    <!--to be fixed: -->
+    <div class="flex_wrap" style="margin-top: 100px;">
+        <div class="w1">
+            <div class="x3">
+                <div>
+                    <span>
+                        <i class="fa fa-plane" style="font-size:24px;"></i>
+                    </span>
+                    <span>
+                        بلیط هواپیما مشهد به یزد
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <span>
+                        <i class="fa fa-user-o" style="font-size:24px;"></i>
+                    </span>
+                    <span>
+                       تعداد مسافر: ۱
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <span>
+                        <i class="fa fa-clock-o" style="font-size:24px;"></i>
+                    </span>
+                    <span>
+                        ۱۳:۰۰
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <span>
+                        <i class="fa fa-calendar" style="font-size:24px"></i>
+                    </span>
+                    <span>
+                        ۱۴۰۱/۱۲/۱۰
+                    </span>
+                </div>
+            </div>
+            <div class="x3" style="margin-top: 330px">
+                <div>
+                    <span>
+                        condition and ruls
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w2">
+            <!-- list of available flight-->
+            <h1 id="HeaderOfList">پرواز های موجود</h1><br>
+            <!--fly list-->
+            <div class="availabe-flights-ticket ">
+                <br><br>
+                <div class="flex_wrap">
+                    <div class ="w-right">
+                        <a href="fly.html" style="text-decoration: none" >
+                        <div class="flex_wrap">
+                            <div class="w3-right">
+                                <img src="../style/img/airplanesLogo/IS.png" class="airline-logo">
+                                <p>فلای پرشیا</p>
+                            </div>
+                            <div class="w3-middle">
+                                <div class="flex_wrap">
+                                    <div class="center">
+                                        <p>
+                                            Lorem ipsum
+                                        </p>
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="w3-left">
+                                <div class="flex_wrap2">
+                                    <div class="w4-top">
+                                        <!--faling air plane time-->
+                                        <span style="display: inline-block;">
+                                        <p id="srcOfFly"> <!--you can add element in this id :)-->
+                                            مشهد 
+                                        </p>
+                                        <img src="../style/img/departure.png" width="20px">
+                                        <img src="../style/img/src.png" width="20px">
+                                        </span>
+                                    </div>
+                                    <div class="w4-bottom" >
+                                        <span style="display: inline-block; ">
+                                        <p id="destOfFly"> <!--you can add element in this id :)-->
+                                            یزد
+                                        </p>
+                                        <img src="../style/img/dis.png" width="20px" style="margin-right: 18px;">
+                                        <img src="../style/img/arrival.png" width="20px" >
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        </a>
+                    </div>
+                    <div class="w-middle"> 
+                        <div class="flex_wrap">
+                            <div class="center">
+                                <p>
+                                    booing
+                                </p>
+                                <p>
+                                    code: ۱۲۳
+                                </p>
+                            </div>
+                        </div>
+                        <!--type of airplane and number of fly-->
+   
+                    </div>
+                    <div class="w-left">
+                        <div class="flex_wrap">
+                            <div class="center">
+                                <h4>قیمت: ۵۰۰ تومان</h4>
+                                <br>
+                                    <button type="submit" id="buy-btn">
+                                        <a href="fly.html" style="text-decoration: none"> خرید </a> <!--link to search flight page-->
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+</body>
+</html>
