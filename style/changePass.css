@@ -1,7 +1,7 @@
-/*@font-face {*/
-/*    font-family: mikhak;*/
-/*    src: url("font/font3.woff2") format("woff2");*/
-/*}*/
+@font-face {
+    font-family: mikhak;
+    src: url("font/font3.woff2") format("woff2");
+}
 *{
     text-decoration: none;
     list-style: none;
