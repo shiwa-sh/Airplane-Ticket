@@ -6,9 +6,9 @@
     src: url(../style/font/font2.woff2) format("woff2");
 }
 
-body{
+.allBG{
     font-family: mikhak;
-    background-image: url(/style/img/picture.png);
+    background-image: url(../style/img/header.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,8 +32,6 @@ body{
     width: 750px;
     height: 220px;
     margin: 20px auto;
-    border: 5px solid #ffffff;
-    border-radius: 30px;
     background-image: 
        url("../style/img/tst.png");
     background-size:cover;
@@ -111,6 +109,7 @@ body{
 .w3-left{
     width: auto;
     flex: 0 0 auto;
+    margin: 13px;
 }
 .flex_wrap2{
     display: flex;
