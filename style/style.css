@@ -140,7 +140,7 @@ header.sticky{
 	border: 1px solid transparent;
 	transform: translateY(-3px);
 }
-
+/****** footer ******/
 #contact{
 	background: url(../style/img/footer.png);
 	background-size: cover;
@@ -173,7 +173,7 @@ header.sticky{
 	position: absolute;
 	height: 2px;
 	width: 80px;
-	left: 10;
+	left: 10px;
 	bottom: -10px;
 	background: #fff;
 }

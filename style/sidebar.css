@@ -22,7 +22,7 @@ a{
     border-radius: 10px;
     position: absolute;
     right: 9%;
-    top: 10%;
+    top: 30%;
     background-color: whitesmoke;
     /*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
     box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
@@ -37,7 +37,9 @@ a{
     text-align: center;
     padding-top: 12px;
     font-weight: bold;
-    background-color:deepskyblue ;
+    /*background-color:deepskyblue ;*/
+    /*background-color: #4890eb;*/
+    background-color: #98b0df;
 }
 
 .subMenuIcon{

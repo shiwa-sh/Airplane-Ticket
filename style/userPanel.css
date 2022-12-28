@@ -1,15 +1,21 @@
+@font-face {
+    font-family: mikhak;
+    src: url("font/font3.woff2") format("woff2");
+}
 *{
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #f0f3f7;
+    /*background-color: #f0f3f7;*/
     direction: rtl;
     font-family: mikhak;
+    scroll-behavior: smooth;
     
 
 }
+
 
 
 /* main panel style */
@@ -19,7 +25,7 @@
     /* height: 50vh; */
     position: absolute;
     left: 10%;
-    top: 15%;
+    top: 35%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
@@ -56,7 +62,7 @@
 }
 
 h2.panel-header-title{
-    background-color:deepskyblue ;
+    background-color:#98b0df ;
     border-radius: 5px;
     padding: 5px;
 }
@@ -86,7 +92,9 @@ h2.panel-header-title{
     height: 100%;
     border-radius: 5px;
     padding: 7px 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;*/
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
 
 .input-container{
 
@@ -114,13 +122,14 @@ h2.panel-header-title{
     cursor: pointer;
 }
 .wrap-input{
-    background-color: white;
+    /*background-color: white;*/
 }
 .submit-btn{
-    background-color: deepskyblue;
+    background-color: #98b0df;
     border-radius: 5px;
     padding: 5px 10px;
     float: left;
     margin-top: 20px;
     cursor: pointer;
 }
+/*footer*/

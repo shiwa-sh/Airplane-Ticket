@@ -30,7 +30,21 @@ function dropDown() {
     let btn = document.querySelector('.sub-item-wraper');
     btn.style.display = 'block';
  }
-
+function showDetail(){
+    console.log("i am connected")
+    let bt = document.getElementById("more-ticket-info");
+    bt.style.display = 'block';
+}
+function showDetail_1(){
+    console.log("i am connected")
+    let bt = document.getElementById("more-ticket-info1");
+    bt.style.display = 'block';
+}
+function showDetail_2(){
+    console.log("i am connected")
+    let bt = document.getElementById("more-ticket-info2");
+    bt.style.display = 'block';
+}
  // redirect to change password file
  function redirect_to_cp(){
     console.error("this is not linking")
@@ -57,6 +71,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
-function showDetail(){
-
-}
