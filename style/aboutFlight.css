@@ -33,5 +33,9 @@ th{
     backdrop-filter: blur(70%);
 }
 #res{
-
+    background-color: aquamarine;
+    backdrop-filter: blur(70%);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
