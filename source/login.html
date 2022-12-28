@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/login.css">
+    <title>ورود</title>
+
+</head>
+
+<body>
+
+<!--header--->
+<header>
+    <a href="#">
+        <img src="../style/img/Air-France-Logo.png" class="logo">
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        
+        <li><a href="#package">پرواز ها</a></li>
+        <li><a href="#destination">مقاصد پروازی</a></li>
+        <li><a href="../index (2).html">خانه</a></li>
+        <li><a href="../source/login.html">حساب کاربری</a></li>
+    </ul>
+</header>
+
+
+
+<section class="login" id="login">
+    <div class="form">
+        <h2>
+            به کجا میخواهید سفر کنید
+        </h2>
+        <label for="from">از</label>
+        <input type="text" id="from" placeholder="شهر مبدا خود را وارد کنید">
+        <label for="from">به</label>
+        <input type="text" id="to" placeholder="شهر مقصد خود را وارد کنید">
+        <label for="تاریخ">تاریخ سفر</label>
+        <input type="date" id="depart">  
+        <label for="passengers">تعداد</label>
+        <select name="passengers" id="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button type="submit" id="booking-search-btn">جستجو کن</button>
+    </div>
+</section>
+
+
+
+
+<div class="login-container">
+    <div class="login-info-container">
+      <form class="inputs-container">
+          <input class="input" type="text" placeholder="Username">
+          <input class="input" type="text" placeholder="Password">
+          <p>Forgot password? <span class="span">Click here</span></p>
+          <button class="btn">login</button>
+          <p>Don't have an account? <span class="span">Sign Up</span></p>
+      </form>
+    </div>
+      <img class="image-container" src="images/login.svg" alt="">
+</div>
+
+
+
+
+
+    
+</body>
+</html>
