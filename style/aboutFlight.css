@@ -20,6 +20,7 @@ td, th{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 10%;
 }
 .top{
     background-image: url(../style/img/Pheader.png);
