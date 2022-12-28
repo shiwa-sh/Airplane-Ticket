@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #f0f3f7;
+    /*background-color: #f0f3f7;*/
     direction: rtl;
     font-family: mikhak;
     
@@ -26,7 +26,7 @@
     /* height: 50vh; */
     position: absolute;
     left: 10%;
-    top: 15%;
+    top: 35%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
@@ -59,7 +59,7 @@
 }
 
 h2.panel-haeader-title{
-    background-color:deepskyblue ;
+    background-color:#98b0df ;
     border-radius: 5px;
     padding: 5px;
 }
@@ -87,14 +87,17 @@ h2.panel-haeader-title{
     
     border: none;
     height: 100%;
+    background-color: #f0f3f7;
 
 }
 
 .input-container {
-    padding: 2px 12px;
+    padding: 2px 14px;
     margin: 5px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;*/
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
 }
 .input-title{
     font-size: 14px;
@@ -122,7 +125,7 @@ h2.panel-haeader-title{
     padding: 7px 15px;
 }
 .submit-btn{
-    background-color: deepskyblue;
+    background-color: #98b0df;
     border-radius: 5px;
     padding: 5px 10px;
     float: left;
