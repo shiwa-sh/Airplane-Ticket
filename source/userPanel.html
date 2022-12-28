@@ -4,24 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\style\header&footer.css">
     <link rel="stylesheet" href="..\style\userPanel.css">
     <link rel="stylesheet" href="..\style\sidebar.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="import" href="sidebar.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
-
+    <script type="text/javascript" src="script.js"></script>
     <script src="..\script\panel.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
-   
-    <!-- main panel -->
+<!-------------------------header--------------------------->
+<div class="header-wrapper">
+<header>
+    <a href="#" class="logo">
+        <img src="../style/img/Air-France-Logo.png" class="logo">
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+
+        <li><a href="#">پرواز ها</a></li>
+        <li><a href="#">مقاصد پروازی</a></li>
+        <li><a href="#">خانه</a></li>
+        <li><a href="#">حساب کاربری</a></li>
+    </ul>
+</header>
+</div>
+<!-----------------------end of header -------------------------->
+<!----------------------------- sidebar  --------------------------------->
+<div class="sidebar">
+    <div class="sidebar-header">
+        پنل کاربری
+    </div>
+    <ul class="parent-menu">
+        <!--  -->
+        <li class="menu-item">
+            <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-user-o" ></i>
+                    </span>
+                <span class="items item-title">پروفایل کاربری</span>
+            </a>
+            <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible dropdown-btn"  onclick="dropDown()">
+                            <i class="fa fa-caret-down" ></i>
+                    </button>
+
+                </span>
+            <!-- sub menu -->
+            <ul class="sub-item-wraper">
+                <li class="sub-item">
+                    <a href="" >
+                            <span style="background-color: white;" >
+                                <i class="fa fa-id-card" aria-hidden="true"></i>
+                            </span>
+                        <span class="sub-item-title">مشخصات</span>
+                    </a>
+                </li>
+                <li class="sub-item">
+                    <a href="" >
+                            <span style="background-color: white;">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                        <span class="sub-item-title">
+<!--                                <button onclick="redirect_to_cp()"  class="cp-btn" style="background-color: white;" type="button"> تغییر رمز عبور </button>-->
+                                <a class="cp-btn" href="changePass.html">تغییر رمز عبور</a>
+                            </span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--  -->
+        <li class="menu-item">
+            <a href="myticket.html" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+
+                    </span>
+                <span class="items item-title">بلیط ها</span>
+            </a>
+            <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+                </span>
+        </li>
+        <!--  -->
+        <li class="menu-item">
+            <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </span>
+                <span class="items item-title">خدمات سفر</span>
+            </a>
+            <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+                </span>
+        </li>
+        <!--  -->
+        <li class="menu-item">
+            <a href="#" class="item">
+                    <span class="item-icon items">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </span>
+                <span class="items item-title">پشتیبانی</span>
+            </a>
+            <span class="items item-down-icon">
+                    <button  type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+                </span>
+
+        </li>
+        <!--  -->
+        <li class="menu-item">
+            <a href="#" class="item " id ="exit">
+                    <span class="item-icon items">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </span>
+                <span class="items item-title">خروج</span>
+            </a>
+            <span class="items item-down-icon">
+                    <button type="button" class="btn-solid collapsible">
+                        <a href="">
+                            <i class="fa fa-caret-down" ></i>
+                        </a>
+                    </button>
+
+
+                </span>
+        </li>
+        <!--  -->
+
+    </ul>
+</div>
+    <!------------------- main panel-------------------------- -->
     <div class="panel">
-        <header class="form-header-container">
+        <head class="form-header-container">
             <div class="panel-header">
                 <h2 class="panel-header-title">اطلاعات کاربری</h2>
             </div> <!-- closed of panel-header   -->
-        </header>
+        </head>
         
 
         <div class="panel-body">
@@ -99,7 +235,7 @@
                     <div class="birthday wrap-input">
                         <div class="birthday-title input-title">تاریخ تولد</div>
                         <div class="birthday-input input-container">
-                            <input type="date" id="birthday" name="birthday">
+                            <input type="date" id="birthday" name="birthday" class="input">
                         </div>
                     </div>
 
@@ -128,124 +264,69 @@
         </div>
     </div>
 
-    <!-- end of main panel -->
-    <!-- sidebar  -->
-    <div class="sidebar">
-        <div class="sidebar-header">
-            پنل کاربری
-        </div>
-        <ul class="parent-menu">
-            <!--  -->
-            <li class="menu-item">
-                <a href="#" class="item">
-                    <span class="item-icon items">
-                        <i class="fa fa-user-o" ></i>
-                    </span>
-                    <span class="items item-title">پروفایل کاربری</span>
-                </a>
-                <span class="items item-down-icon">
-                    <button type="button" class="btn-solid collapsible dropdown-btn"  onclick="dropDown()">
-                            <i class="fa fa-caret-down" ></i>
-                    </button>
-                  
-                </span>
-                <!-- sub menu -->
-                <ul class="sub-item-wraper">
-                    <li class="sub-item">
-                        <a href="" >
-                            <span style="background-color: white;" >
-                                <i class="fa fa-id-card" aria-hidden="true"></i>
-                            </span>
-                            <span class="sub-item-title">مشخصات</span>
-                        </a>
-                    </li>
-                    <li class="sub-item">
-                        <a href="" >
-                            <span style="background-color: white;">
-                                <i class="fa fa-key" aria-hidden="true"></i>
-                            </span>
-                            <span class="sub-item-title"> 
-                                <button onclick="redirect_to_cp()"  class="cp-btn" style="background-color: white;" type="button"> تغییر رمز عبور </button>
-                            </span>
-                        </a>
-                    </li>
+    <!----------------------------- end of main panel --------------------------->
+
+
+<div class="footer-wrapper" style="width: 100%; height: 5px; background-color: #98b0df; "></div>
+<div style="width: 100%;height:  550px;"></div>
+<div style="width: 100%; height: 10vh;"></div>
+
+<!--footer--->
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+
+                <img src="../style/img/icon2.png" class="svg">
+
+            </div>
+
+            <div class="list">
+                <h4>air france</h4>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">خرید بلیط</a></li>
+                    <li><a href="#">پیگیری بلیط</a></li>
+                    <li><a href="#">لیست پروازها</a></li>
+                    <li><a href="#">حساب کاربری</a></li>
                 </ul>
-            </li>
-            <!--  -->
-            <li class="menu-item">
-                <a href="#" class="item">
-                    <span class="item-icon items">
-                        <i class="fa fa-ticket" aria-hidden="true"></i>
+            </div>
 
-                    </span>
-                    <span class="items item-title">بلیط ها</span>
-                </a>
-                <span class="items item-down-icon">
-                    <button type="button" class="btn-solid collapsible">
-                        <a href="">
-                            <i class="fa fa-caret-down" ></i>
-                        </a>
-                    </button>
-                   
-                </span>
-            </li>
-            <!--  -->
-            <li class="menu-item">
-                <a href="#" class="item">
-                    <span class="item-icon items">
-                        <i class="fa fa-suitcase" aria-hidden="true"></i>
-                    </span>
-                    <span class="items item-title">خدمات سفر</span>
-                </a>
-                <span class="items item-down-icon">
-                    <button type="button" class="btn-solid collapsible">
-                        <a href="">
-                            <i class="fa fa-caret-down" ></i>
-                        </a>
-                    </button>
-                    
-                </span>
-            </li>
-            <!--  -->
-            <li class="menu-item">
-                <a href="#" class="item">
-                    <span class="item-icon items">
-                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                    </span>
-                    <span class="items item-title">پشتیبانی</span>
-                </a>
-                <span class="items item-down-icon">
-                    <button  type="button" class="btn-solid collapsible">
-                        <a href="">
-                            <i class="fa fa-caret-down" ></i>
-                        </a>
-                    </button>    
-                </span>
-                
-            </li>
-            <!--  -->
-            <li class="menu-item">
-                <a href="#" class="item">
-                    <span class="item-icon items">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </span>
-                    <span class="items item-title">خروج</span>
-                </a>
-                <span class="items item-down-icon">
-                    <button type="button" class="btn-solid collapsible">
-                        <a href="">
-                            <i class="fa fa-caret-down" ></i>
-                        </a>
-                    </button>
-                  
-                    
-                </span>
-            </li>
-            <!--  -->
-            
-        </ul>
+            <div class="list">
+                <h4>هواپیمایی فرانسه</h4>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">خرید بلیط</a></li>
+                    <li><a href="#">پیگیری بلیط</a></li>
+                    <li><a href="#">لیست پروازها</a></li>
+                    <li><a href="#">حساب کاربری</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+
+                <img src="../style/img/Air-France-Logo.png" class="logo">
+
+                <ul>
+                    <li><p class="info">لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
+                        <br>لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
+                    </p>
+                        <div class="social">
+                            <a href="#"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
     </div>
-
+</section>
+<!--------------------------footer end--------------------------------------->
 
 
 

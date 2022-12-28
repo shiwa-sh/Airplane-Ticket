@@ -2,6 +2,7 @@
 @font-face {
     font-family: mikhak;
     src: url("font/font3.woff2") format("woff2");
+    font-weight: normal;
 }
 input{
     border: none;
@@ -9,7 +10,9 @@ input{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-
+a{
+    background-color: white;
+}
 
 /* panel sidebar style */
 .sidebar{
@@ -19,9 +22,12 @@ input:focus, textarea:focus, select:focus{
     border-radius: 10px;
     position: absolute;
     right: 9%;
-    top: 10%;
+    top: 30%;
     background-color: whitesmoke;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+    box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
+    padding: 5px;
+    background-color: white;
     
 }
 .sidebar-header{
@@ -31,7 +37,9 @@ input:focus, textarea:focus, select:focus{
     text-align: center;
     padding-top: 12px;
     font-weight: bold;
-    background-color:deepskyblue ;
+    /*background-color:deepskyblue ;*/
+    /*background-color: #4890eb;*/
+    background-color: #98b0df;
 }
 
 .subMenuIcon{
@@ -143,6 +151,7 @@ li.sub-item{
 button{
     border: none;
     outline: none;
+    background-color: white;
 }
 
 .sub-item-wraper{
@@ -160,4 +169,7 @@ button{
 .cp-btn:hover{
     color: rgb(106, 165, 192);
     font-weight: bold;
+}
+.fa-caret-down{
+    background-color: white;
 }
