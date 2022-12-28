@@ -4,7 +4,7 @@
     color: #ffff;
     text-align: center;
     margin: auto;
-    
+    font-size: large;
 }
 *{
     direction: rtl;
@@ -23,24 +23,30 @@
 .w1{
     width: 25%;
     flex: 0 0 auto;
-    border: 1px solid green;
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: bulr(70%);
     padding-right: 10px;
 }
 .w2{
     width: 65%;
     flex: 0 0 auto;
-    border: 1px solid green;
+    box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: bulr(70%);
     padding-right: 10px;
 }
 th, td {
-    border:1px solid blue;
     text-align: center;
     padding: 10px;
-    border-collapse: collapse;
+    
+    border:1px solid blue;
+    border-radius: 20px;
 }
 table {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-collapse: collapse;
     width: 100%;
 }
@@ -80,8 +86,14 @@ table {
     color: white;
 }
 .filterO{
-    border:1px solid blue;
     text-align: center;
     padding: 10px;
     border-collapse: collapse;
+}
+.back{
+    background-image: url(../style/img/personnel.png);
+    background-size: cover;
+    padding: 150px;
+    width: 1610px;
+    height: 650px;
 }
