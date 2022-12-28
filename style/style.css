@@ -72,9 +72,6 @@ section{
 	padding: 80px 18%;
 }
 
-section{
-	padding: 80px 18%;
-}
 .home{
 	position: relative;
 	width: 100%;
@@ -140,7 +137,7 @@ header.sticky{
 	border: 1px solid transparent;
 	transform: translateY(-3px);
 }
-/****** footer ******/
+
 #contact{
 	background: url(../style/img/footer.png);
 	background-size: cover;
