@@ -27,6 +27,7 @@ body{
 	color: #221314;
 }
 header{
+	direction: ltr;
 	position: fixed;
 	top: 0;
 	right: 0;
