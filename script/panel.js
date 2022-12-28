@@ -45,6 +45,18 @@ function showDetail_2(){
     let bt = document.getElementById("more-ticket-info2");
     bt.style.display = 'block';
 }
+// const info = document.querySelectorAll('.mti');
+// info.forEach(ele =>{
+//     ele.addEventListener('click', function handleClick(event){
+//         console.log('show more information' ,event);
+//         ele.setAttribute('style', 'display:block;')
+//     })
+// })
+
+const exit = document.getElementById('exit');
+exit.addEventListener('click',function (){
+    window.alert("آیا می خواهید از حساب خارج شوید ؟")
+})
  // redirect to change password file
  function redirect_to_cp(){
     console.error("this is not linking")

@@ -1,0 +1,232 @@
+/*footer-wrapper{*/
+/*    !*position: absolute;*!*/
+/*    !*bottom: 0;*!*/
+
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*}*/
+#contact{
+    /*background: url(img/footer.png);*/
+    /*background-color: #5948de;*/
+    background-color: #6958f1;
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow:  0 20px 30px rgba(137, 113, 221, 0.7);
+
+
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    direction: ltr;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.footer{
+
+    padding: 20px 0;
+    bottom: 0;
+}
+
+.svg{
+    width: 200px;
+    height: 200px;
+}
+.list{
+    direction: rtl;
+    width: 25%;
+}
+.list h4{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    left: 50px;
+    bottom: -10px;
+    background: #fff;
+}
+.list ul li:not(last-child) {
+    margin-bottom: 16px;
+}
+.list ul li a{
+    color: #ffffffbf;
+    font-size: var(--p-font);
+    display: block;
+    background: transparent;
+}
+.list ul li a:hover{
+    color:#fff;
+}
+
+.info {
+    color: #fff;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.list .social a{
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    color: #453dc4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.list .social a:hover{
+    transform: scale(1.1);
+    color: #453dc4;
+}
+
+/*header*/
+:root{
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 40PX;
+    --p-font: 1.1rem;
+}
+.header-wrapper{
+    height: 40vh;
+    background: url(img/airplane1.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    direction: ltr;
+    z-index: -1;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /*z-index: 1000;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+    direction: ltr;
+
+}
+.logo{
+    height:28px;
+    width: 230px;
+    background: transparent;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+    background: transparent;
+}
+.navbar a:hover{
+    background: #fff;
+    color: #6e54fa;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+#menu-icon{
+    color: #fff;
+    font-size: 35px;
+    /*z-index: 1;*/
+    cursor: pointer;
+    display: none;
+}
+
+
+header.sticky{
+    background: rgba(255, 255, 255, 0.856);
+    padding: 10px 18%;
+    box-shadow: rgba(33,35,38, 0.1) 0px 10px 10px -10px;
+}
+.sticky .logo{
+
+
+}
+.sticky .navbar a{
+    color: #6e54fa;
+}
+
+.text h2{
+    font-size: var(--h2-font);
+    line-height: 1.1;
+}
+
+/* icon */
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.icon-box{
+    padding: 50px 10px;
+    border-radius: 30px;
+}
+
+.icon-img{
+    height: 100px;
+    width: 100px;
+}
+
+.icon-box h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.icon-box p{
+    font-size: 15px;
+    color: #6e54fa;
+}
+
+.icon-box:hover{
+    box-shadow: 5px 30px 56.1276px #6d54fa8c;
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+@media (max-width: 1400px){
+    header{
+        padding: 17px 3%;
+    }
+    header.sticky{
+        padding: 10px 3%;
+
+    }
+    section{
+        padding: 80px 3%;
+
+    }
+    :root{
+        --big-font: 4.5rem;
+        --h2-font: 40PX;
+        --p-font: 1rem;
+
+    }
+}
