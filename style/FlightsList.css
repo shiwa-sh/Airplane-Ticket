@@ -8,14 +8,17 @@
 
 .allBG{
     font-family: mikhak;
-    background-image: url(../style/img/header.png);
+    background-image: url(img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     
 }
-
+#HeaderOfList{
+    padding-right: 20px;
+    padding-top: 10px;
+}
 .summery-des{
     width: 100%;
     margin-top: 4.5%;
@@ -26,14 +29,13 @@
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     top: 0;
-    backdrop-filter: bulr(80%);
+    backdrop-filter: blur(80%);
 }
 .availabe-flights-ticket{
     width: 750px;
-    height: 220px;
+    height: 254px;
     margin: 20px auto;
-    background-image: 
-       url("../style/img/tst.png");
+    background-image: url("img/ticket.png");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -45,7 +47,7 @@
     border-radius: 30px;
     box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: bulr(70%);
+    backdrop-filter: blur(70%);
 }
 
 
@@ -73,6 +75,11 @@
     flex: 0 0 auto;
     margin: 13px;
     box-shadow: 0 2px 3px rgb(158, 53, 190);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
 }
 .summery{
     margin: 100px;

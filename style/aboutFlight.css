@@ -8,15 +8,17 @@
 }
 table{
     width: 100%;
+
+
     border-collapse: collapse;
 }
 td, th{
-    border: 2px solid rebeccapurple;
+    border: 1px solid #98b0df;
     padding: 5px;
     text-align: center;
 }
 .aa{
-    background-image: url(../style/img/picture.png);
+    /*background-image: url(img/bg.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,20 +27,32 @@ td, th{
     padding-right: 10%;
 }
 .top{
-    background-image: url(../style/img/Pheader.png);
+    background-image: url(img/bg.png);
     padding: 120px;
     font-size: large;
     background-size: cover;
     color: darkorange;
+    height: 50vh;
 }
 th{
-    background-color: aquamarine;
+    background-color: #bbd6f4;
     backdrop-filter: blur(70%);
 }
 #res{
-    background-color: aquamarine;
+    background-color: #bbd6f4;
     backdrop-filter: blur(70%);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+}
+.table-header{
+    text-align: center;
+    background-color: #bbd6f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.table-header > span{
+    margin-right: 25px;
 }
