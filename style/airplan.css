@@ -10,6 +10,15 @@ body{
     font-family: mikhak;
 }
 
+
+.bg{
+  background-image: url(../style/img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .summery-des{
     width: 100%;
     margin-top: 4.5%;
@@ -37,6 +46,7 @@ body{
     position: fixed;
     text-align: right;
     width: 400px;
+    
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
@@ -71,6 +81,7 @@ body{
 
 .w2{
     width:65%;
+    height: auto;
     flex: 0 0 auto;
     margin: 13px;
     box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
@@ -136,3 +147,109 @@ body{
     width: 400px;
     height: 300px;
   }
+
+
+/* info css */
+
+  /* .panel-header{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #ffffff;
+} */
+
+/* .form-header-container
+{
+    padding-bottom: 10px;
+    background-color: #ffffff;
+} */
+
+
+.panel-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: white; */
+    column-gap: 20px;
+    justify-content:space-between;
+    float: right;
+}
+
+h2.panel-header-title{
+    /* background-color:#98b0df ; */
+    /* border-radius: 5px; */
+    padding: 5px;
+    margin-top: 40px;
+    margin-right: 380px;
+    color:#6e54fa
+} 
+.show{
+    display: block;
+}
+
+.wrap{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    /* background-color: #ffffff; */
+}
+.wrap1{
+    flex : 0 0 auto;
+    
+}
+
+.input{
+    
+    border: none;
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+    padding: 7px 15px;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;*/
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.input-container{
+
+    margin: 5px;
+    /* background-color: white; */
+}
+
+.input-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    /* background-color: #ffffff; */
+    
+}
+
+.input:focus{
+    border: none;
+}
+
+.fa{
+    /* background-color: #ffffff; */
+}
+
+.cp-btn:hover{
+    cursor: pointer;
+}
+.wrap-input{
+    /*background-color: white;*/
+}
+.submit-btn{
+    background-color: #98b0df;
+    border-radius: 5px;
+    padding: 5px 10px;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*footer*/

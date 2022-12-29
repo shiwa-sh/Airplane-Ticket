@@ -3,9 +3,10 @@
     <title></title>
     <link rel="stylesheet" href="../style/airplan.css">
     <link rel="stylesheet" href="../style/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="bg">
   
       <!--header--->
 	<header>
@@ -22,7 +23,7 @@
             <li><a href="#login">حساب کاربری</a></li>
 		</ul>
 	</header>  
-  
+
     <div class="flex_wrap" style="margin-top: 100px;">
         <div class="w1">
             <div class="x3">
@@ -65,7 +66,7 @@
             <div class="x3" style="margin-top: 330px">
                 <div>
                     <span>
-                        condition and ruls
+                        صورتحساب سفر :  1500000 تومان
                     </span>
                 </div>
             </div>
@@ -141,70 +142,128 @@
                   <div class="seat sold"></div>
                   <div class="seat" ></div>
                 </div>
-              </div> <!-- div air -->
+              </div> 
+              <!-- div air -->
             </div>  
+
+            <!-- info -->
+            <div class="panel">
+              <head class="form-header-container">
+                  <div class="panel-header">
+                      <h2 class="panel-header-title">اطلاعات مسافر</h2>
+                  </div> <!-- closed of panel-header   -->
+              </head>
+              
+      
+              <div class="panel-body">
+                  <form action="" name="register" method="get" class="panel-body-form">
+                      <section>
+      
+                          <div class="wrap">
+      
+                              <div class="first-name wrap-input" >
+                                  <div class="firs-name-title input-title">نام</div>
+                                  <div class="first-name-input input-container">
+                                      <input type="text" id="name" name="name" class="input" required>
+                                  </div>
+                              </div>
+          
+                              <div class="last-name wrap-input">
+                                  <div class="last-name-title input-title"> نام خانوادگی</div>
+                                  <div class="last-name-input input-container">
+                                      <input type="text" id="last-name" name="last-name" class="input" required>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="wrap">
+                              <div class="en-name wrap-input">
+                                  <div class="en-name-title input-title">نام به انگلیسی</div>
+                                  <div class="en-name-input input-container">
+                                      <input type="text" id="en-name" name="en-name" class="input" required>
+                                  </div>
+                              </div>
+          
+                              <div class="en-last-name wrap-input">
+                                  <div class="en-last-name-title input-title">نام خانوادگی به انگلیسی</div>
+                                  <div class="en-last-name-input input-container">
+                                      <input type="text" id="en-last-name" name="en-last-name" class="input" required>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="wrap">
+                              <div class="national-code wrap-input">
+                                  <div class="national-code-title input-title">شماره ملی</div>
+                                  <div class="national-code-input input-container">
+                                      <input type="text" id="national-code" name="national-code" class="input" required>
+                                  </div>
+                              </div>
+      
+                              <div class="passport-code wrap-input">
+                                  <div class="passport-code-title input-title">شماره گذرنامه</div>
+                                  <div class="passport-code-input input-container">
+                                      <input type="text" id="passport-code" name="passport-code" placeholder="شماره گذرنامه (اختیاری)" class="input">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="wrap">
+                              <div class="email wrap-input">
+                                  <div class="email-title input-title">ایمیل</div>
+                                  <div class="email-input input-container">
+                                      <input type="email" id="email" name="email" class="input">
+                                  </div>
+                              </div>
+      
+                              <div class="phone wrap-input">
+                                  <div class="phone-title input-title">تلفن همراه</div>
+                                  <div class="phone-input input-container">
+                                      <input type="text" id="phone" name="phone" class="input">
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          
+                         
+                          <div>
+                          <div class="birthday wrap-input">
+                              <div class="birthday-title input-title">تاریخ تولد</div>
+                              <div class="birthday-input input-container">
+                                  <input type="date" id="birthday" name="birthday" class="input">
+                              </div>
+                          </div>
+      
+                          <div class="password wrap-input">
+                              <div class="password-title input-title">رمز عبور</div>
+                              <div class="password-input input-container">
+                                  <input type="password" id="password" name="password" style="border-radius: 5px" class="input">
+                              </div>
+                          </div>
+      
+                          <div class="wrap">
+      
+                              <input type="radio" name="male" id="male">
+                              <label for="male">مرد</label>
+                              <input type="radio" name="female" id="female">
+                              <label for="female">زن</label><br>
+                          </div>
+                          </div>
+      
+                          <div class="submit-button" style="background-color: white">
+                              <button type="submit" class="submit-btn">پرداخت</button>
+                          </div>
+                      </section>
+                  </form>
+      
+              </div>
+          </div>
+          <!-- end info -->
+
         </div>
+  
     </div>
-
-
-
-    	<!--footer--->
-	<!-- <section id="contact">
-		<div class="footer">
-			<div class="main">
-				<div class="list">
-					<a href="#">
-						<img src="icon2.png" class="svg">
-					</a>
-				</div>
-
-				<div class="list">
-					<h4>air france</h4>
-					<ul>
-						<li><a href="#">درباره ما</a></li>
-						<li><a href="#">خرید بلیط</a></li>
-						<li><a href="#">پیگیری بلیط</a></li>
-						<li><a href="#">لیست پروازها</a></li>
-						<li><a href="#">حساب کاربری</a></li>
-					</ul>
-				</div>
-
-				<div class="list">
-					<h4>هواپیمایی فرانسه</h4>
-					<ul>
-						<li><a href="#">درباره ما</a></li>
-						<li><a href="#">خرید بلیط</a></li>
-						<li><a href="#">پیگیری بلیط</a></li>
-						<li><a href="#">لیست پروازها</a></li>
-						<li><a href="#">حساب کاربری</a></li>
-					</ul>
-				</div>
-
-				<div class="list">
-					<a href="#">
-						<img src="Air-France-Logo.png" class="logo">
-					</a>
-					<ul>
-						<li><p class="info">لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
-						<br>لورم ایپسوم متن ساختگی با تولید <br>سادگی نامفهوم از صنعت چاپ و با <br>استفاده از طراحان گرافیک است.
-						</p>
-						<div class="social">
-							<a href="#"><i class='bx bxl-facebook' ></i></a>
-							<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-							<a href="#"><i class='bx bxl-twitter' ></i></a>
-							<a href="#"><i class='bx bxl-linkedin' ></i></a>
-						</div>
-					</li>
-						
-					</ul>
-				</div>
-
-				
-			</div>
-		</div>
-	</section> -->
-
-
+    
     <script type="text/javascript" src="../script/script.js"></script>
     <script src="../script/airplan.js"></script>
         
