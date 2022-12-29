@@ -1,15 +1,130 @@
 
+@font-face {
+    font-family: mikhak;
+    src: url(../style/font/font3.woff2) format("woff2");
+}
 
+:root {
+    --login-bg:#f8f3ff98;
+    --title-bg: #6e54fa;
+    --button-bg: #6e54fa;
+    --light-pink: #e882e8;
+    --image-bg:  #eadbff ;
+}
 
-
-.login{
-    position: relative;
+.login-bg {
+	direction: rtl;
+    font-family: 'mikhak';
+    background-image: url(../style/img/bg.png);
+	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url(../style/img/bg.png);
-	background-size:contain;
+	background-size: cover;
 	background-position: center;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
+
 }
+
+.login-container {
+	box-shadow: 0 20px 30px rgba(255, 255, 255, 0.7);
+	font-family: 'mikhak';
+    height: 400px;
+    width: 600px;
+    margin: 6em auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login-info-container {
+	font-family: 'mikhak';
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px; 	
+    background-color: rgba(255, 255, 255, 0.651);
+	
+}
+
+.image-container {
+    padding:0;
+    width: 50%;
+    background-color: var(--image-bg);
+    box-sizing: border-box;
+}
+
+
+.inputs-container {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input, .btn {
+    width: 200;
+    height: 200px;
+    font-size: 15px;
+	font-family: mikhak;
+
+}
+
+.input {
+
+    padding-left: 20px;
+	margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.btn {
+	
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e54fa;
+    cursor: pointer;
+}
+
+.btn:hover {
+	
+    transform: scale(1.2);
+}
+
+
+.inputs-container p {
+    margin: 0;
+}
+
+.span {
+
+	margin: 3px;
+    color: #6e54fa;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

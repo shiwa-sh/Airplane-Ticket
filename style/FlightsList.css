@@ -7,8 +7,9 @@
 }
 
 .allBG{
+    direction: rtl;
     font-family: mikhak;
-    background-image: url(../style/img/header.png);
+    background-image: url(../style/img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,10 +31,10 @@
 }
 .availabe-flights-ticket{
     width: 750px;
-    height: 220px;
+    height: 250px;
     margin: 20px auto;
     background-image: 
-       url("../style/img/tst.png");
+       url("../style/img/3x/Artboard\ 1@3x.png");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -69,10 +70,19 @@
     margin: 13px;
 }
 .w2{
-    width:65%;
+    /* width:65%;
     flex: 0 0 auto;
     margin: 13px;
-    box-shadow: 0 2px 3px rgb(158, 53, 190);
+    box-shadow: 0 2px 3px rgb(158, 53, 190); */
+    width:65%;
+    height: auto;
+    flex: 0 0 auto;
+    margin: 13px;
+    box-shadow: 0 20px 30px rgba(137, 113, 221, 0.7);
+    background-color: rgba(255, 255, 255, 0.733);
+    backdrop-filter: bulr(80%);
+    border-radius: 30px;
+    
 }
 .summery{
     margin: 100px;
@@ -129,10 +139,24 @@
     margin:auto ;
 }
 #buy-btn{
-    background: rgba(254, 135, 57);
+	 
+    /* background: #453dc4;
     border-radius: 10px;
+    font-style: none;
+    color: #fff;
+    font-size: medium;
+    font-family: mikhak; */
+    text-decoration: none;
+    width: 100px;
+    width: 100px;
+    height: 50px;
+    background:#f03737;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     color: #ffff;
     font-size: medium;
     font-family: mikhak;
-    width: 100px;
+
 }
